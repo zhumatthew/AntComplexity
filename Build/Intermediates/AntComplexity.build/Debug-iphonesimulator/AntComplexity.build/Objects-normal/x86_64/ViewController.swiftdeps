@@ -1,0 +1,251 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C13AntComplexity14ViewController"
+provides-member:
+- ["C13AntComplexity14ViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "cycles"
+- "didReceiveMemoryWarning"
+- "gmaxselected"
+- "explorationGrid"
+- "pheromone"
+- "solutionGrid"
+depends-top-level:
+- "UIViewController"
+- "Int"
+- "BooleanLiteralType"
+- "Array"
+- "ViewController"
+depends-member:
+- ["PSs9AnyObject", "Array"]
+- ["PSs9AnyObject", "cycles"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "explorationGrid"]
+- ["PSs9AnyObject", "gmaxselected"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "pheromone"]
+- ["PSs9AnyObject", "solutionGrid"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- ["Sa", "init"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- ["PSs11CVarArgType", "Array"]
+- ["PSs11CVarArgType", "cycles"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "explorationGrid"]
+- ["PSs11CVarArgType", "gmaxselected"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "pheromone"]
+- ["PSs11CVarArgType", "solutionGrid"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- ["PSs14CollectionType", "init"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "Array"]
+- ["PSs23CustomStringConvertible", "cycles"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "explorationGrid"]
+- ["PSs23CustomStringConvertible", "gmaxselected"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "pheromone"]
+- ["PSs23CustomStringConvertible", "solutionGrid"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "Array"]
+- ["PSs9Equatable", "cycles"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "explorationGrid"]
+- ["PSs9Equatable", "gmaxselected"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "pheromone"]
+- ["PSs9Equatable", "solutionGrid"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "Array"]
+- ["PSs8Hashable", "cycles"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "explorationGrid"]
+- ["PSs8Hashable", "gmaxselected"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "pheromone"]
+- ["PSs8Hashable", "solutionGrid"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["PSs9Indexable", "init"]
+- ["PSs21MutableCollectionType", "init"]
+- ["PSs16MutableIndexable", "init"]
+- ["PSs16MutableSliceable", "init"]
+- ["PSo8NSCoding", "Array"]
+- ["PSo8NSCoding", "cycles"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "explorationGrid"]
+- ["PSo8NSCoding", "gmaxselected"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "pheromone"]
+- ["PSo8NSCoding", "solutionGrid"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "Array"]
+- ["PSo26NSExtensionRequestHandling", "cycles"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "explorationGrid"]
+- ["PSo26NSExtensionRequestHandling", "gmaxselected"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "pheromone"]
+- ["PSo26NSExtensionRequestHandling", "solutionGrid"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Array"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "cycles"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "explorationGrid"]
+- ["CSo8NSObject", "gmaxselected"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "pheromone"]
+- ["CSo8NSObject", "solutionGrid"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "Array"]
+- ["PSo16NSObjectProtocol", "cycles"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "explorationGrid"]
+- ["PSo16NSObjectProtocol", "gmaxselected"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "pheromone"]
+- ["PSo16NSObjectProtocol", "solutionGrid"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- ["PSs12SequenceType", "init"]
+- ["PSo21UIAppearanceContainer", "Array"]
+- ["PSo21UIAppearanceContainer", "cycles"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "explorationGrid"]
+- ["PSo21UIAppearanceContainer", "gmaxselected"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "pheromone"]
+- ["PSo21UIAppearanceContainer", "solutionGrid"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Array"]
+- ["PSo18UIContentContainer", "cycles"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "explorationGrid"]
+- ["PSo18UIContentContainer", "gmaxselected"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "pheromone"]
+- ["PSo18UIContentContainer", "solutionGrid"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "Array"]
+- ["PSo18UIFocusEnvironment", "cycles"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "explorationGrid"]
+- ["PSo18UIFocusEnvironment", "gmaxselected"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "pheromone"]
+- ["PSo18UIFocusEnvironment", "solutionGrid"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "Array"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "cycles"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "explorationGrid"]
+- ["CSo11UIResponder", "gmaxselected"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "pheromone"]
+- ["CSo11UIResponder", "solutionGrid"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "Array"]
+- ["PSo16UIStateRestoring", "cycles"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "explorationGrid"]
+- ["PSo16UIStateRestoring", "gmaxselected"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "pheromone"]
+- ["PSo16UIStateRestoring", "solutionGrid"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "Array"]
+- ["PSo18UITraitEnvironment", "cycles"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "explorationGrid"]
+- ["PSo18UITraitEnvironment", "gmaxselected"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "pheromone"]
+- ["PSo18UITraitEnvironment", "solutionGrid"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Array"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "cycles"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "explorationGrid"]
+- ["CSo16UIViewController", "gmaxselected"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "pheromone"]
+- ["CSo16UIViewController", "solutionGrid"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["C13AntComplexity14ViewController", "Array"]
+- ["C13AntComplexity14ViewController", "Int"]
+- ["C13AntComplexity14ViewController", "cycles"]
+- ["C13AntComplexity14ViewController", "deinit"]
+- ["C13AntComplexity14ViewController", "didReceiveMemoryWarning"]
+- ["C13AntComplexity14ViewController", "explorationGrid"]
+- ["C13AntComplexity14ViewController", "gmaxselected"]
+- ["C13AntComplexity14ViewController", "init"]
+- ["C13AntComplexity14ViewController", "pheromone"]
+- ["C13AntComplexity14ViewController", "solutionGrid"]
+- ["C13AntComplexity14ViewController", "viewDidLoad"]
+- ["PSs10_ArrayType", "init"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- ["PSs12_Reflectable", "init"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- "PSs11CVarArgType"
+- "PSs14CollectionType"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSs9Indexable"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "C13AntComplexity14ViewController"
+- "PSs10_ArrayType"
+- "PSs24_DestructorSafeContainer"
+- "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "b7de49411f3db05af65ad84ea9e254ff"
