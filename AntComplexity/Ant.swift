@@ -14,6 +14,9 @@ class Ant {
     static var maxSelected = 0
     static var bestExplorationGrid = [[Int]]()
     
+    // solutionGrid may simply be the initial grid??
+    // rename to initialGrid later??
+    
     func exploreGrid(solutionGrid: [[Int]], pheromone: [[[Double]]]) {
         
         var digitRow = [[Bool]]()
