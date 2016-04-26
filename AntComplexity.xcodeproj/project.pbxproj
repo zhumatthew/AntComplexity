@@ -14,6 +14,7 @@
 		B39A78A21CCAD46300C18117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39A78A01CCAD46300C18117 /* LaunchScreen.storyboard */; };
 		B39A78AD1CCAD46400C18117 /* AntComplexityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A78AC1CCAD46400C18117 /* AntComplexityTests.swift */; };
 		B39A78B81CCAD46400C18117 /* AntComplexityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A78B71CCAD46400C18117 /* AntComplexityUITests.swift */; };
+		B3DC2CA11CCF0B1F00DAEA57 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		B39A78B31CCAD46400C18117 /* AntComplexityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntComplexityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39A78B71CCAD46400C18117 /* AntComplexityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntComplexityUITests.swift; sourceTree = "<group>"; };
 		B39A78B91CCAD46400C18117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
+		B3DC2CA41CCF160000DAEA57 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +100,10 @@
 		B39A78961CCAD46300C18117 /* AntComplexity */ = {
 			isa = PBXGroup;
 			children = (
+				B3DC2CA41CCF160000DAEA57 /* Playground.playground */,
 				B39A78971CCAD46300C18117 /* AppDelegate.swift */,
 				B39A78991CCAD46300C18117 /* ViewController.swift */,
+				B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */,
 				B39A789B1CCAD46300C18117 /* Main.storyboard */,
 				B39A789E1CCAD46300C18117 /* Assets.xcassets */,
 				B39A78A01CCAD46300C18117 /* LaunchScreen.storyboard */,
@@ -255,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DC2CA11CCF0B1F00DAEA57 /* Ant.swift in Sources */,
 				B39A789A1CCAD46300C18117 /* ViewController.swift in Sources */,
 				B39A78981CCAD46300C18117 /* AppDelegate.swift in Sources */,
 			);
@@ -481,6 +487,7 @@
 				B39A78BE1CCAD46400C18117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B39A78BF1CCAD46400C18117 /* Build configuration list for PBXNativeTarget "AntComplexityTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +496,7 @@
 				B39A78C11CCAD46400C18117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B39A78C21CCAD46400C18117 /* Build configuration list for PBXNativeTarget "AntComplexityUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +505,7 @@
 				B39A78C41CCAD46400C18117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

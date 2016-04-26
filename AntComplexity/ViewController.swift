@@ -21,23 +21,22 @@ class ViewController: UIViewController {
         var pheromone = Array(count: 9, repeatedValue: Array(count: 9, repeatedValue: Array(count: 9, repeatedValue: 1000.0)))
         
         // Represents the contents of the 9x9 grid (matrix b in the paper)
-        var explorationGrid = Array<Array<Int>>()
-        var bestExplorationGrid = Array<Array<Int>>()
-        var globalBestExplorationGrid = Array<Array<Int>>()
+//        var bestExplorationGrid = [[Int]]()
+        var globalBestExplorationGrid = [[Int]]()
 
         
         // Represents the contents of the 9x9 grid (matrix a in the paper)
-        var solutionGrid = Array<Array<Int>>()
+        var solutionGrid = [[Int]]()
         
         
         // If digitRow[i][digit] is true, then the digit is already present in row i
-        var digitRow = Array<Array<Bool>>()
+//        var digitRow = [[Bool]]()
         
         // If digitColumn[j][digit] is true, then the digit is already present in column j
-        var digitColumn = Array<Array<Bool>>()
+//        var digitColumn = [[Bool]]()
         
         // g stands for 'global' ?
-        var gmaxselected = 0
+        var globalMaxSelected = 0
         
         let numCycles = 1000
         
@@ -55,60 +54,19 @@ class ViewController: UIViewController {
         
         // Set a maximum bound on the number of cycles or iterations
         // for all cycles
+        
+        let antCount = 500
+        let ants = [Ant](count: antCount, repeatedValue: Ant())
+        
+        
         for var cycle = 0; cycle < numCycles; cycle++ {
-            var maxSelected = 0
+            Ant.maxSelected = 0
             for ant in ants {
-                explorationGrid = solutionGrid
-                var selected = 0
-                
-                // The next selection of a digit-position pair is possible and can be made
-                var canSelect = true
-                
-                while (canSelect) {
-                    for i in 1...9 {
-                        for j in 1...9 {
-                            let digit = solutionGrid[i][j]
-                            if digit != 0 {
-                                digitRow[i][digit] = true
-                                digitColumn[j][digit] = true
-                                selected++
-                            }
-                        }
-                    }
-                    // for all digits k
-                    for k in 1...9 {
-                        for i in 1...9 {
-                            for j in 1...9 {
-                                // subgridPossiblePositions[i][j][k] = number of possible positions in 3x3 sub-grid
-                                
-                                
-                                // There are digits which can be entered into more than one position and
-                            }
-                        }
-                    }
-                    
-                    // for all positions in the 9x9 grid
-                    for i in 1...9 {
-                        for j in 1...9 {
-                            // how many digits can be entered in a single position?
-                            // probably need to check for each digit k in 1...9 if it is in digitRow, digitColumn, and that subgridPossiblePositions[i][j][k] is > 0
-                            // If only a single digit can be entered into the position
-                            // then explorationGrid[i][j] = k, the digit is entered into the position
-                            // selected++
-                            
-                        }
-                    }
-                    if selected == 81 {
-                        canSelect = false
-                    }
-                } // end while (canSelect)
-                if selected > maxSelected {
-                    maxSelected = selected
-                    bestExplorationGrid = explorationGrid
-                }
+                ant.exploreGrid(solutionGrid, pheromone: pheromone)
+                // ant.exploreGrid()
             } // end for all ants
             
-            let deltaPheromone = Double(maxSelected) / 81.0;
+            let deltaPheromone = Double(Ant.maxSelected) / 81.0;
             
             for i in 1...9 {
                 for j in 1...9 {
@@ -121,16 +79,16 @@ class ViewController: UIViewController {
             
             for i in 1...9 {
                 for j in 1...9 {
-                    let k = bestExplorationGrid[i][j]
+                    let k = Ant.bestExplorationGrid[i][j]
                     if k != 0 {
                         pheromone[i][j][k] += deltaPheromone
                     }
                 }
             }
             
-            if maxSelected > gmaxselected {
-                gmaxselected = maxSelected
-                globalBestExplorationGrid = bestExplorationGrid
+            if Ant.maxSelected > globalMaxSelected {
+                globalMaxSelected = Ant.maxSelected
+                globalBestExplorationGrid = Ant.bestExplorationGrid
             }
             
         }
