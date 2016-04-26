@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let solutionGrid = [[0,0,0,2,6,0,7,0,1],[6,8,0,0,7,0,0,9,0],[1,9,0,0,0,4,5,0,0],[8,2,0,1,0,0,0,4,0],[0,0,4,6,0,2,9,0,0],[0,5,0,0,0,3,0,2,8],[0,0,9,3,0,0,0,7,4],[0,4,0,0,5,0,0,3,6],[7,0,3,0,1,8,0,0,0]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +27,10 @@ class ViewController: UIViewController {
         var globalBestExplorationGrid = [[Int]]()
 
         
+        // call this starting grid?
         // Represents the contents of the 9x9 grid (matrix a in the paper)
-        var solutionGrid = [[Int]]()
+//        let solutionGrid = [[Int]]()
+
         
         
         // If digitRow[i][digit] is true, then the digit is already present in row i
@@ -56,32 +60,25 @@ class ViewController: UIViewController {
         // for all cycles
         
         let antCount = 500
-        let ants = [Ant](count: antCount, repeatedValue: Ant())
+        let ants = [Ant](count: antCount, repeatedValue: Ant(solutionGrid: solutionGrid))
         
         
         for var cycle = 0; cycle < numCycles; cycle++ {
             Ant.maxSelected = 0
             for ant in ants {
-                ant.exploreGrid(solutionGrid, pheromone: pheromone)
-                // ant.exploreGrid()
+                ant.exploreGrid(pheromone)
             } // end for all ants
             
             let deltaPheromone = Double(Ant.maxSelected) / 81.0;
             
-            for i in 1...9 {
-                for j in 1...9 {
-                    for k in 1...9 {
-                        // evaporation of pheromone
-                        pheromone[i][j][k] *= r
-                    }
-                }
-            }
+            // multiply each element by decay constant to emulate evaporation of pheromone
+            pheromone = pheromone.map({ $0.map({ $0.map({ $0 * r }) }) })
             
-            for i in 1...9 {
-                for j in 1...9 {
-                    let k = Ant.bestExplorationGrid[i][j]
-                    if k != 0 {
-                        pheromone[i][j][k] += deltaPheromone
+            for i in 0...8 {
+                for j in 0...8 {
+                    let digit = Ant.bestExplorationGrid[i][j]
+                    if digit != 0 {
+                        pheromone[i][j][digit-1] += deltaPheromone
                     }
                 }
             }
@@ -92,6 +89,10 @@ class ViewController: UIViewController {
             }
             
         }
+        
+        // end of all cycles
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

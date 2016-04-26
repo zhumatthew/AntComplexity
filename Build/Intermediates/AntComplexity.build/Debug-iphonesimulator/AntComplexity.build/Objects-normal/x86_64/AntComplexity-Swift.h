@@ -114,11 +114,6 @@ SWIFT_CLASS("_TtC13AntComplexity14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-@property (nonatomic, readonly, copy) NSArray<NSArray<NSArray<NSNumber *> *> *> * __nonnull pheromone;
-@property (nonatomic, readonly, copy) NSArray<NSArray<NSNumber *> *> * __nonnull explorationGrid;
-@property (nonatomic, readonly, copy) NSArray<NSArray<NSNumber *> *> * __nonnull solutionGrid;
-@property (nonatomic) NSInteger gmaxselected;
-@property (nonatomic, readonly) BOOL cycles;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -1,7 +1,7 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "24adc0e6c787ebf777f8591abb710907"
-build_time: [514957005, 390485000]
+build_time: [514970873, 374992000]
 inputs:
-  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/Ant.swift": !dirty [514957003, 0]
-  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift": !dirty [514955791, 0]
   "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/AppDelegate.swift": [514677091, 0]
+  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift": [514970872, 0]
+  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/Ant.swift": [514970844, 0]
