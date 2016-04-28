@@ -14,6 +14,7 @@
 		B39A78A21CCAD46300C18117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39A78A01CCAD46300C18117 /* LaunchScreen.storyboard */; };
 		B39A78AD1CCAD46400C18117 /* AntComplexityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A78AC1CCAD46400C18117 /* AntComplexityTests.swift */; };
 		B39A78B81CCAD46400C18117 /* AntComplexityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A78B71CCAD46400C18117 /* AntComplexityUITests.swift */; };
+		B3A514761CD1BDF50018DD0F /* Array+AntComplexity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A514751CD1BDF50018DD0F /* Array+AntComplexity.swift */; };
 		B3DC2CA11CCF0B1F00DAEA57 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */; };
 		B3DC2CA61CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC2CA51CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift */; };
 		B3DC2CA81CD00B5E00DAEA57 /* UICollectionViewCellSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC2CA71CD00B5E00DAEA57 /* UICollectionViewCellSudoku.swift */; };
@@ -50,6 +51,7 @@
 		B39A78B31CCAD46400C18117 /* AntComplexityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntComplexityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39A78B71CCAD46400C18117 /* AntComplexityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntComplexityUITests.swift; sourceTree = "<group>"; };
 		B39A78B91CCAD46400C18117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A514751CD1BDF50018DD0F /* Array+AntComplexity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+AntComplexity.swift"; path = "Extensions/Array+AntComplexity.swift"; sourceTree = "<group>"; };
 		B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
 		B3DC2CA41CCF160000DAEA57 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		B3DC2CA51CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayoutSudoku.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		B39A78961CCAD46300C18117 /* AntComplexity */ = {
 			isa = PBXGroup;
 			children = (
+				B3A514741CD1BDA80018DD0F /* Extensions */,
 				B3DC2CA41CCF160000DAEA57 /* Playground.playground */,
 				B39A78971CCAD46300C18117 /* AppDelegate.swift */,
 				B39A78991CCAD46300C18117 /* ViewController.swift */,
@@ -134,6 +137,14 @@
 				B39A78B91CCAD46400C18117 /* Info.plist */,
 			);
 			path = AntComplexityUITests;
+			sourceTree = "<group>";
+		};
+		B3A514741CD1BDA80018DD0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3A514751CD1BDF50018DD0F /* Array+AntComplexity.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				B39A789A1CCAD46300C18117 /* ViewController.swift in Sources */,
 				B39A78981CCAD46300C18117 /* AppDelegate.swift in Sources */,
 				B3DC2CA61CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift in Sources */,
+				B3A514761CD1BDF50018DD0F /* Array+AntComplexity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

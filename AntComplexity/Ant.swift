@@ -7,6 +7,8 @@
 //
 
 
+// The original paper had a flaw in that its probalistic selection technique was biased toward the lower end of the index range because the indices were selected in order
+
 // Yellow up to 50% intensity/darkness on squares to indicate pheromone and blue letters on top.
 // Bold the original values?
 
@@ -114,6 +116,7 @@ class Ant {
                         
                         // If the digit is already in the subgrid, there are no positions
                         if digitSubgrid[subGridYCoordinate*3+j/3][k] {
+                            subgridPositions[i][j][k] = positions // Before this wasn't getting assigned to 0 and values from previous iterations were interfering
                             continue;
                         }
                         
@@ -138,10 +141,10 @@ class Ant {
                         // (When no digits can be entered into the 9x9 grid, canSelect = false)???
                         
                         // If there are no positions into which the digit can be entered into the subgrid and the digit is not already in the subgrid, then this explorationGrid cannot be the solution
-                        if positions == 0 {
-                            canSelect = false // to indicate this ^ ??
+//                        if positions == 0 {
+//                            canSelect = false // to indicate this ^ ??
                             // Although this explorationGrid cannot be the solution, it may be too early to set canSelect to false as it may still be possible to fill other cells elsewhere in the grid
-                        }
+//                        }
                         
                         // As the code is, it seems that even once a digit has been entered into a subgrid, i and j will still iterate through the subgrid
                         // does the code have to exit the function if a cell is selected??
@@ -240,23 +243,47 @@ class Ant {
             // Random number between 0 and 1
             let r = Double(arc4random()) / Double(UINT32_MAX)
             
+            var positionDigitPair1D = Array.init(0...9*9*9-1)
+            positionDigitPair1D.shuffleInPlace()
+            
+            while positionDigitPair1D.count > 0 {
+                
+                let n = positionDigitPair1D.popLast()!
+                let k = n % 9
+                let j = ((n-k)/9)%9
+                let i = (((n-k)/9)-j)/9
+                if p[i][j][k] > r && subgridPositions[i][j][k] > 0 && !digitRow[i][k] && !digitColumn[j][k] && explorationGrid[i][j] == 0 {
+                    
+                    let subGridYCoordinate = i/3 // truncates decimal places and ranges from 0-2
+                    if digitSubgrid[subGridYCoordinate*3+j/3][k] {
+                        
+                    }
+                    
+                    explorationGrid[i][j] = k+1 // digit index is one less than the digit
+                    selected += 1
+                    continue select
+                    // break select
+                }
+                
+            }
+
             // This is not really probabilistic digit selecting. It actually starts at lower numbers and increments to higher numbers
             // To make this probabilistic, then a randomly sorted array of size 9 * 81 should be created with numbers from 0 to
             // 9 * 81 - 1 and i, j, and k should be selected based on that
-            for i in 0...8 {
-                for j in 0...8 {
-                    for k in 0...8 {
-                        // for all elements of the probability matrix, compare it to the random number
-                        if p[i][j][k] > r && subgridPositions[i][j][k] > 0 && !digitRow[i][k] && !digitColumn[j][k] && explorationGrid[i][j] == 0 {
-                            
-                            explorationGrid[i][j] = k+1 // digit index is one less than the digit
-                            selected += 1
-                            continue select
-//                            break select
-                        }
-                    }
-                }
-            }
+//            for i in 0...8 {
+//                for j in 0...8 {
+//                    for k in 0...8 {
+//                        // for all elements of the probability matrix, compare it to the random number
+//                        if p[i][j][k] > r && subgridPositions[i][j][k] > 0 && !digitRow[i][k] && !digitColumn[j][k] && explorationGrid[i][j] == 0 {
+//                            
+//                            explorationGrid[i][j] = k+1 // digit index is one less than the digit
+//                            selected += 1
+//                            continue select
+////                            break select
+//                        }
+//                    }
+//                }
+//            }
             
             if selected == 81 {
                 canSelect = false
