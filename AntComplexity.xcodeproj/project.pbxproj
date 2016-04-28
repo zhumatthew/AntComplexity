@@ -15,6 +15,8 @@
 		B39A78AD1CCAD46400C18117 /* AntComplexityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A78AC1CCAD46400C18117 /* AntComplexityTests.swift */; };
 		B39A78B81CCAD46400C18117 /* AntComplexityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A78B71CCAD46400C18117 /* AntComplexityUITests.swift */; };
 		B3DC2CA11CCF0B1F00DAEA57 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */; };
+		B3DC2CA61CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC2CA51CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift */; };
+		B3DC2CA81CD00B5E00DAEA57 /* UICollectionViewCellSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC2CA71CD00B5E00DAEA57 /* UICollectionViewCellSudoku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		B39A78B91CCAD46400C18117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
 		B3DC2CA41CCF160000DAEA57 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		B3DC2CA51CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayoutSudoku.swift; sourceTree = "<group>"; };
+		B3DC2CA71CD00B5E00DAEA57 /* UICollectionViewCellSudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellSudoku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				B39A78991CCAD46300C18117 /* ViewController.swift */,
 				B3DC2CA01CCF0B1E00DAEA57 /* Ant.swift */,
 				B39A789B1CCAD46300C18117 /* Main.storyboard */,
+				B3DC2CA71CD00B5E00DAEA57 /* UICollectionViewCellSudoku.swift */,
+				B3DC2CA51CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift */,
 				B39A789E1CCAD46300C18117 /* Assets.xcassets */,
 				B39A78A01CCAD46300C18117 /* LaunchScreen.storyboard */,
 				B39A78A31CCAD46300C18117 /* Info.plist */,
@@ -260,9 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DC2CA81CD00B5E00DAEA57 /* UICollectionViewCellSudoku.swift in Sources */,
 				B3DC2CA11CCF0B1F00DAEA57 /* Ant.swift in Sources */,
 				B39A789A1CCAD46300C18117 /* ViewController.swift in Sources */,
 				B39A78981CCAD46300C18117 /* AppDelegate.swift in Sources */,
+				B3DC2CA61CCFF00500DAEA57 /* UICollectionViewFlowLayoutSudoku.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
