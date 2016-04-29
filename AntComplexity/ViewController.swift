@@ -36,10 +36,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 //    let solutionGrid = [[0,0,0,6,0,0,4,0,0],[7,0,0,0,0,3,6,0,0],[0,0,0,0,9,1,0,8,0],[0,0,0,0,0,0,0,0,0],[0,5,0,1,8,0,0,0,3],[0,0,0,3,0,6,0,4,5],[0,4,0,2,0,0,0,6,0],[9,0,3,0,0,0,0,0,0],[0,2,0,0,0,0,1,0,0]]
     
     // Difficult #2
-//    let solutionGrid = [[2,0,0,3,0,0,0,0,0],[8,0,4,0,6,2,0,0,3],[0,1,3,8,0,0,2,0,0],[0,0,0,0,2,0,3,9,0],[5,0,7,0,0,0,6,2,1],[0,3,2,0,0,6,0,0,0],[0,2,0,0,0,9,1,4,0],[6,0,1,2,5,0,8,0,9],[0,0,0,0,0,1,0,0,2]]
+    let solutionGrid = [[2,0,0,3,0,0,0,0,0],[8,0,4,0,6,2,0,0,3],[0,1,3,8,0,0,2,0,0],[0,0,0,0,2,0,3,9,0],[5,0,7,0,0,0,6,2,1],[0,3,2,0,0,6,0,0,0],[0,2,0,0,0,9,1,4,0],[6,0,1,2,5,0,8,0,9],[0,0,0,0,0,1,0,0,2]]
     
     // Not fun
-    let solutionGrid = [[0,2,0,0,0,0,0,0,0],[0,0,0,6,0,0,0,0,3],[0,7,4,0,8,0,0,0,0],[0,0,0,0,0,3,0,0,2],[0,8,0,0,4,0,0,1,0],[6,0,0,5,0,0,0,0,0],[0,0,0,0,1,0,7,8,0],[5,0,0,0,0,9,0,0,0],[0,0,0,0,0,0,0,4,0]]
+//    let solutionGrid = [[0,2,0,0,0,0,0,0,0],[0,0,0,6,0,0,0,0,3],[0,7,4,0,8,0,0,0,0],[0,0,0,0,0,3,0,0,2],[0,8,0,0,4,0,0,1,0],[6,0,0,5,0,0,0,0,0],[0,0,0,0,1,0,7,8,0],[5,0,0,0,0,9,0,0,0],[0,0,0,0,0,0,0,4,0]]
     
     // Evil
 //    let solutionGrid = [[4,0,3,0,0,0,1,0,0],[0,0,0,3,0,0,0,0,5],[0,0,0,0,2,1,7,0,0],[0,3,0,0,0,6,0,0,2],[0,5,0,0,4,0,0,3,0],[1,0,0,5,0,0,0,6,0],[0,0,8,6,9,0,0,0,0],[7,0,0,0,0,3,0,0,0],[0,0,4,0,0,0,2,0,9]]
@@ -79,7 +79,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         
         // Slider was disabled before the solve button was pressed, which is why the cell label text is set to the solution grid cell
-        if slider.enabled {
+        if slider.enabled || Ant.maxSelected == 81 {
             // fatal error: Array index out of range
             let digit = ants[Int(slider.value)].explorationGrid[row][column]
             cell.label.text = "\(digit)"
@@ -244,9 +244,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                     if globalMaxSelected == 81 {
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             print("Best ant: \(Ant.bestAnt+1)")
-//                            self.slider.value = Float(Ant.bestAnt)
-//                            self.sliderValueDidChange(self.slider)
-//                            self.slider.enabled = false
+                            self.slider.enabled = false
+                            self.slider.value = Float(Ant.bestAnt)
+                            self.sliderValueDidChange(self.slider)
+                            
+                            // UIControlEventTouchCancel
+                            
                         })
                         return
                     }

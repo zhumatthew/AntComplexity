@@ -31,18 +31,29 @@ class UICollectionViewCellSudoku: UICollectionViewCell {
         addLineViews()
     }
     
+//    [15:20:44]  <weaksauce>	you can hack it and do a dispatch_once thing in drawRect()
+//    [15:20:49]  <weaksauce>	and call addLineViews from that
+    
     func addLineViews() {
 //        topLineView = UIView(frame: CGRectMake(0.0, 0.5, self.bounds.width, 1.5))
 //        topLineView.backgroundColor = UIColor.blackColor()
 //        contentView.addSubview(topLineView)
-//        bottomLineView = UIView(frame: CGRectMake(0.0, self.bounds.height-2.0, self.bounds.width, 1.5))
-//        bottomLineView.backgroundColor = UIColor.blackColor()
-//        contentView.addSubview(bottomLineView)
-//        leftLineView = UIView(frame: CGRectMake(0.5, 0.0, 1.5, self.bounds.height))
-//        leftLineView.backgroundColor = UIColor.blackColor()
-//        contentView.addSubview(leftLineView)
-//        rightLineView = UIView(frame: CGRectMake(self.bounds.width-2.0, 0.0, 1.5, self.bounds.height))
-//        rightLineView.backgroundColor = UIColor.blackColor()
+        bottomLineView = UIView(frame: CGRectMake(0.0, self.bounds.height-2.0, self.bounds.width, 1.5))
+        bottomLineView.backgroundColor = UIColor.redColor()
+        contentView.addSubview(bottomLineView)
+        leftLineView = UIView(frame: CGRectMake(0.5, 0.0, 1.5, self.bounds.height))
+        leftLineView.backgroundColor = UIColor.greenColor()
+        contentView.addSubview(leftLineView)
+        rightLineView = UIView(frame: CGRectMake(self.bounds.width-2.0, 0.0, 1.5, self.bounds.height))
+        rightLineView.backgroundColor = UIColor.redColor()
+        contentView.addSubview(rightLineView)
+        
+        print("boundswidth: ", self.bounds.width)
+        print("contentview bounds: ", self.contentView.bounds.width)
+        
+        
+//        rightLineView = UIView(frame: CGRectMake(0.5, 0.0, 1.5, self.bounds.height))
+//        rightLineView.backgroundColor = UIColor.redColor()
 //        contentView.addSubview(rightLineView)
     }
     
@@ -51,12 +62,21 @@ class UICollectionViewCellSudoku: UICollectionViewCell {
         // If it is row 2, 5, or 8, draw thicker line below
         // If it is row 0, 3, or 6, draw thicker line above
         
+        let row = indexPath.row / 9
+        let column = indexPath.row % 9
+        
+        if row == 4 && column == 4 {
+            print("DR boundswidth: ", self.bounds.width)
+            print("DR contentview bounds: ", self.contentView.bounds.width)
+            print("DR right line view : ", self.rightLineView.bounds)
+        }
+        
 //        let row = indexPath.row / 9
 //        let column = indexPath.row % 9
-        
-
-        
-        
+//        
+//
+//        
+//        
 //        if column == 8 {
 //            let lineView = UIView(frame: CGRectMake(self.bounds.width-2.0, 0.0, 1.5, self.bounds.height))
 //            lineView.backgroundColor = UIColor.blackColor()
@@ -84,9 +104,9 @@ class UICollectionViewCellSudoku: UICollectionViewCell {
 //            lineView.backgroundColor = UIColor.blackColor()
 //            contentView.addSubview(lineView)
 //        }
-        
-        self.layer.borderWidth = 0.5
-        self.layer.borderColor = UIColor.blackColor().CGColor
+//        
+//        self.layer.borderWidth = 0.5
+//        self.layer.borderColor = UIColor.blackColor().CGColor
     }
     
     override func prepareForReuse() {
