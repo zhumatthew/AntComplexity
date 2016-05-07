@@ -1,0 +1,490 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UICollectionViewFlowLayoutSudoku"
+provides-nominal:
+- "C13AntComplexity32UICollectionViewFlowLayoutSudoku"
+provides-member:
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", ""]
+provides-dynamic-lookup:
+- "layoutAttributesForItemAtIndexPath"
+- "collectionViewContentSize"
+- "layoutAttributesForElementsInRect"
+depends-top-level:
+- "UICollectionViewFlowLayoutSudoku"
+- "CGRect"
+- !private "CGSizeMake"
+- !private "..."
+- !private "/"
+- !private "CGRectMake"
+- "UICollectionViewLayoutAttributes"
+- !private "CGFloat"
+- "NSIndexPath"
+- !private "%"
+- "CGSize"
+- "UICollectionViewFlowLayout"
+- !private "*"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "CGRectMake"]
+- !private ["Ps9AnyObject", "CGSizeMake"]
+- !private ["Ps9AnyObject", "NSIndexPath"]
+- !private ["Ps9AnyObject", "UICollectionViewLayoutAttributes"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "collectionView"]
+- ["Ps9AnyObject", "collectionViewContentSize"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "layoutAttributesForElementsInRect"]
+- ["Ps9AnyObject", "layoutAttributesForItemAtIndexPath"]
+- !private ["Ps9AnyObject", "row"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "_DisabledRangeIndex"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "_DisabledRangeIndex"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps11CVarArgType", "CGFloat"]
+- !private ["Ps11CVarArgType", "CGRectMake"]
+- !private ["Ps11CVarArgType", "CGSizeMake"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSIndexPath"]
+- !private ["Ps11CVarArgType", "UICollectionViewLayoutAttributes"]
+- !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
+- !private ["Ps11CVarArgType", "bounds"]
+- !private ["Ps11CVarArgType", "collectionView"]
+- ["Ps11CVarArgType", "collectionViewContentSize"]
+- !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "layoutAttributesForElementsInRect"]
+- ["Ps11CVarArgType", "layoutAttributesForItemAtIndexPath"]
+- !private ["Ps11CVarArgType", "row"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs14ClosedInterval", "deinit"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "append"]
+- !private ["Ps14CollectionType", "init"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
+- !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSIndexPath"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UICollectionViewLayoutAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "collectionView"]
+- ["Ps28CustomDebugStringConvertible", "collectionViewContentSize"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "layoutAttributesForElementsInRect"]
+- ["Ps28CustomDebugStringConvertible", "layoutAttributesForItemAtIndexPath"]
+- !private ["Ps28CustomDebugStringConvertible", "row"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "CGRectMake"]
+- !private ["Ps23CustomStringConvertible", "CGSizeMake"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "NSIndexPath"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UICollectionViewLayoutAttributes"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "collectionView"]
+- ["Ps23CustomStringConvertible", "collectionViewContentSize"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "layoutAttributesForElementsInRect"]
+- ["Ps23CustomStringConvertible", "layoutAttributesForItemAtIndexPath"]
+- !private ["Ps23CustomStringConvertible", "row"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "CGRectMake"]
+- !private ["Ps9Equatable", "CGSizeMake"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Generator"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSIndexPath"]
+- !private ["Ps9Equatable", "UICollectionViewLayoutAttributes"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "collectionView"]
+- ["Ps9Equatable", "collectionViewContentSize"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "layoutAttributesForElementsInRect"]
+- ["Ps9Equatable", "layoutAttributesForItemAtIndexPath"]
+- !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "CGRectMake"]
+- !private ["Ps8Hashable", "CGSizeMake"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSIndexPath"]
+- !private ["Ps8Hashable", "UICollectionViewLayoutAttributes"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "collectionView"]
+- ["Ps8Hashable", "collectionViewContentSize"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "layoutAttributesForElementsInRect"]
+- ["Ps8Hashable", "layoutAttributesForItemAtIndexPath"]
+- !private ["Ps8Hashable", "row"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "_DisabledRangeIndex"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "append"]
+- !private ["Ps21MutableCollectionType", "init"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "append"]
+- !private ["Ps16MutableSliceable", "init"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "CGSizeMake"]
+- !private ["PSo8NSCoding", "NSIndexPath"]
+- !private ["PSo8NSCoding", "UICollectionViewLayoutAttributes"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "collectionView"]
+- ["PSo8NSCoding", "collectionViewContentSize"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "layoutAttributesForElementsInRect"]
+- ["PSo8NSCoding", "layoutAttributesForItemAtIndexPath"]
+- !private ["PSo8NSCoding", "row"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "frame"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "row"]
+- !private ["CSo11NSIndexPath", "init"]
+- !private ["CSo11NSIndexPath", "row"]
+- !private ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectMake"]
+- ["CSo8NSObject", "CGSize"]
+- !private ["CSo8NSObject", "CGSizeMake"]
+- ["CSo8NSObject", "NSIndexPath"]
+- ["CSo8NSObject", "UICollectionViewLayoutAttributes"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "collectionView"]
+- ["CSo8NSObject", "collectionViewContentSize"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "layoutAttributesForElementsInRect"]
+- ["CSo8NSObject", "layoutAttributesForItemAtIndexPath"]
+- !private ["CSo8NSObject", "row"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- !private ["PSo16NSObjectProtocol", "NSIndexPath"]
+- !private ["PSo16NSObjectProtocol", "UICollectionViewLayoutAttributes"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "collectionView"]
+- ["PSo16NSObjectProtocol", "collectionViewContentSize"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "layoutAttributesForElementsInRect"]
+- ["PSo16NSObjectProtocol", "layoutAttributesForItemAtIndexPath"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "row"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["Vs5Range", "Generator"]
+- !private ["Vs14RangeGenerator", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "append"]
+- !private ["Ps30RangeReplaceableCollectionType", "init"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "append"]
+- !private ["Ps12SequenceType", "init"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "_DisabledRangeIndex"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "_DisabledRangeIndex"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- !private ["Ps10Strideable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["CSo16UICollectionView", "bounds"]
+- !private ["CSo26UICollectionViewFlowLayout", "CGFloat"]
+- ["CSo26UICollectionViewFlowLayout", "CGRect"]
+- !private ["CSo26UICollectionViewFlowLayout", "CGRectMake"]
+- ["CSo26UICollectionViewFlowLayout", "CGSize"]
+- !private ["CSo26UICollectionViewFlowLayout", "CGSizeMake"]
+- ["CSo26UICollectionViewFlowLayout", "NSIndexPath"]
+- ["CSo26UICollectionViewFlowLayout", "UICollectionViewLayoutAttributes"]
+- !private ["CSo26UICollectionViewFlowLayout", "collectionView"]
+- ["CSo26UICollectionViewFlowLayout", "collectionViewContentSize"]
+- ["CSo26UICollectionViewFlowLayout", "init"]
+- ["CSo26UICollectionViewFlowLayout", "layoutAttributesForElementsInRect"]
+- ["CSo26UICollectionViewFlowLayout", "layoutAttributesForItemAtIndexPath"]
+- ["CSo26UICollectionViewFlowLayout", ""]
+- !private ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "CGFloat"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "CGRect"]
+- !private ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "CGRectMake"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "CGSize"]
+- !private ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "CGSizeMake"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "NSIndexPath"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "UICollectionViewLayoutAttributes"]
+- !private ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "collectionView"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "collectionViewContentSize"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "deinit"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "init"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "layoutAttributesForElementsInRect"]
+- ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", "layoutAttributesForItemAtIndexPath"]
+- !private ["CSo22UICollectionViewLayout", "CGFloat"]
+- ["CSo22UICollectionViewLayout", "CGRect"]
+- !private ["CSo22UICollectionViewLayout", "CGRectMake"]
+- ["CSo22UICollectionViewLayout", "CGSize"]
+- !private ["CSo22UICollectionViewLayout", "CGSizeMake"]
+- ["CSo22UICollectionViewLayout", "NSIndexPath"]
+- ["CSo22UICollectionViewLayout", "UICollectionViewLayoutAttributes"]
+- !private ["CSo22UICollectionViewLayout", "collectionView"]
+- ["CSo22UICollectionViewLayout", "collectionViewContentSize"]
+- ["CSo22UICollectionViewLayout", "init"]
+- ["CSo22UICollectionViewLayout", "layoutAttributesForElementsInRect"]
+- ["CSo22UICollectionViewLayout", "layoutAttributesForItemAtIndexPath"]
+- !private ["CSo32UICollectionViewLayoutAttributes", "frame"]
+- !private ["CSo32UICollectionViewLayoutAttributes", "init"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- !private ["CSo11UIResponder", "bounds"]
+- !private ["CSo12UIScrollView", "bounds"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["CSo6UIView", "bounds"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "append"]
+- !private ["Ps10_ArrayType", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_DisabledRangeIndex"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "append"]
+- !private ["Ps12_Reflectable", "bounds"]
+- !private ["Ps12_Reflectable", "height"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "width"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "_DisabledRangeIndex"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "Ps11CVarArgType"
+- !private "Vs14ClosedInterval"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo11NSIndexPath"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- !private "Vs14RangeGenerator"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo16UICollectionView"
+- "CSo26UICollectionViewFlowLayout"
+- "C13AntComplexity32UICollectionViewFlowLayoutSudoku"
+- "CSo22UICollectionViewLayout"
+- !private "CSo32UICollectionViewLayoutAttributes"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+interface-hash: "20c11426d87d360968a066824ff23a83"

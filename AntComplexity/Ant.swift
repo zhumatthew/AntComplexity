@@ -239,7 +239,9 @@ class Ant {
             
             // p = w.map(<#T##transform: ([[Double]]) throws -> T##([[Double]]) throws -> T#>)
 
-            
+            // Is it wasting iterations because r is so high that none of the values of p
+            // are greater than r on some cycles?
+            // If so, make r random between 0 and the highest probability?
             // Random number between 0 and 1
             let r = Double(arc4random()) / Double(UINT32_MAX)
             
