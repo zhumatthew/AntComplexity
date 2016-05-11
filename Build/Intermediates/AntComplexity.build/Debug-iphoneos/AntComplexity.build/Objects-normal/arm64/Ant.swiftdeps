@@ -7,29 +7,31 @@ provides-member:
 - ["C13AntComplexity3Ant", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Bool"
-- !private "UINT32_MAX"
-- !private "&&"
-- !private "/"
-- !private "||"
-- !private "arc4random"
 - !private "..."
-- !private "!"
-- !private "-"
-- !private ">"
-- "Int"
-- "IntegerLiteralType"
-- "FloatLiteralType"
 - !private "=="
-- !private "+"
-- !private "Array"
-- !private "BooleanLiteralType"
-- !private "%"
-- "Ant"
-- "Double"
-- !private "+="
-- !private "!="
+- "IntegerLiteralType"
+- !private ">"
 - !private "*"
+- !private "%"
+- !private "||"
+- !private "UINT32_MAX"
+- !private "+"
+- "Ant"
+- !private "!"
+- !private "!="
+- !private "/"
+- !private "&&"
+- !private "print"
+- "Int"
+- "Double"
+- !private "Bool"
+- !private "StringLiteralType"
+- !private "-"
+- !private "+="
+- !private "BooleanLiteralType"
+- !private "arc4random"
+- "FloatLiteralType"
+- !private "Array"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -43,12 +45,14 @@ depends-member:
 - !private ["C13AntComplexity3Ant", "arc4random"]
 - ["C13AntComplexity3Ant", "bestAnt"]
 - ["C13AntComplexity3Ant", "bestExplorationGrid"]
+- ["C13AntComplexity3Ant", "compareSolutionGrid"]
 - ["C13AntComplexity3Ant", "deinit"]
 - ["C13AntComplexity3Ant", "explorationGrid"]
 - ["C13AntComplexity3Ant", "exploreGrid"]
 - ["C13AntComplexity3Ant", "id"]
 - ["C13AntComplexity3Ant", "init"]
 - ["C13AntComplexity3Ant", "maxSelected"]
+- !private ["C13AntComplexity3Ant", "print"]
 - ["C13AntComplexity3Ant", "selected"]
 - !private ["Ps9AnyObject", "Ant"]
 - !private ["Ps9AnyObject", "Array"]
@@ -62,6 +66,7 @@ depends-member:
 - !private ["Ps9AnyObject", "explorationGrid"]
 - !private ["Ps9AnyObject", "id"]
 - !private ["Ps9AnyObject", "maxSelected"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "selected"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "Generator"]
@@ -73,6 +78,7 @@ depends-member:
 - !private ["Sa", "flatMap"]
 - ["Sa", "init"]
 - !private ["Sa", "map"]
+- !private ["Sa", "maxElement"]
 - !private ["Sa", "popLast"]
 - !private ["Sa", "reduce"]
 - !private ["Sa", "shuffleInPlace"]
@@ -85,6 +91,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "flatMap"]
 - ["Ps23ArrayLiteralConvertible", "init"]
 - !private ["Ps23ArrayLiteralConvertible", "map"]
+- !private ["Ps23ArrayLiteralConvertible", "maxElement"]
 - !private ["Ps23ArrayLiteralConvertible", "popLast"]
 - !private ["Ps23ArrayLiteralConvertible", "reduce"]
 - !private ["Ps23ArrayLiteralConvertible", "shuffleInPlace"]
@@ -122,6 +129,7 @@ depends-member:
 - !private ["Ps14CollectionType", "flatMap"]
 - ["Ps14CollectionType", "init"]
 - !private ["Ps14CollectionType", "map"]
+- !private ["Ps14CollectionType", "maxElement"]
 - !private ["Ps14CollectionType", "popLast"]
 - !private ["Ps14CollectionType", "reduce"]
 - !private ["Ps14CollectionType", "shuffleInPlace"]
@@ -142,6 +150,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "flatMap"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
+- !private ["Ps28CustomDebugStringConvertible", "maxElement"]
 - !private ["Ps28CustomDebugStringConvertible", "popLast"]
 - !private ["Ps28CustomDebugStringConvertible", "reduce"]
 - !private ["Ps28CustomDebugStringConvertible", "shuffleInPlace"]
@@ -160,6 +169,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "flatMap"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "map"]
+- !private ["Ps23CustomStringConvertible", "maxElement"]
 - !private ["Ps23CustomStringConvertible", "popLast"]
 - !private ["Ps23CustomStringConvertible", "reduce"]
 - !private ["Ps23CustomStringConvertible", "shuffleInPlace"]
@@ -206,6 +216,7 @@ depends-member:
 - !private ["Ps9Indexable", "flatMap"]
 - ["Ps9Indexable", "init"]
 - !private ["Ps9Indexable", "map"]
+- !private ["Ps9Indexable", "maxElement"]
 - !private ["Ps9Indexable", "popLast"]
 - !private ["Ps9Indexable", "reduce"]
 - !private ["Ps9Indexable", "shuffleInPlace"]
@@ -256,6 +267,7 @@ depends-member:
 - !private ["Ps21MutableCollectionType", "flatMap"]
 - ["Ps21MutableCollectionType", "init"]
 - !private ["Ps21MutableCollectionType", "map"]
+- !private ["Ps21MutableCollectionType", "maxElement"]
 - !private ["Ps21MutableCollectionType", "popLast"]
 - !private ["Ps21MutableCollectionType", "reduce"]
 - !private ["Ps21MutableCollectionType", "shuffleInPlace"]
@@ -268,6 +280,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "flatMap"]
 - ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "map"]
+- !private ["Ps16MutableIndexable", "maxElement"]
 - !private ["Ps16MutableIndexable", "popLast"]
 - !private ["Ps16MutableIndexable", "reduce"]
 - !private ["Ps16MutableIndexable", "shuffleInPlace"]
@@ -285,6 +298,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "flatMap"]
 - ["Ps16MutableSliceable", "init"]
 - !private ["Ps16MutableSliceable", "map"]
+- !private ["Ps16MutableSliceable", "maxElement"]
 - !private ["Ps16MutableSliceable", "popLast"]
 - !private ["Ps16MutableSliceable", "reduce"]
 - !private ["Ps16MutableSliceable", "shuffleInPlace"]
@@ -306,6 +320,7 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "flatMap"]
 - ["Ps30RangeReplaceableCollectionType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "map"]
+- !private ["Ps30RangeReplaceableCollectionType", "maxElement"]
 - !private ["Ps30RangeReplaceableCollectionType", "popLast"]
 - !private ["Ps30RangeReplaceableCollectionType", "reduce"]
 - !private ["Ps30RangeReplaceableCollectionType", "shuffleInPlace"]
@@ -319,6 +334,7 @@ depends-member:
 - !private ["Ps12SequenceType", "flatMap"]
 - ["Ps12SequenceType", "init"]
 - !private ["Ps12SequenceType", "map"]
+- !private ["Ps12SequenceType", "maxElement"]
 - !private ["Ps12SequenceType", "popLast"]
 - !private ["Ps12SequenceType", "reduce"]
 - !private ["Ps12SequenceType", "shuffleInPlace"]
@@ -376,6 +392,7 @@ depends-member:
 - !private ["Ps10_ArrayType", "flatMap"]
 - ["Ps10_ArrayType", "init"]
 - !private ["Ps10_ArrayType", "map"]
+- !private ["Ps10_ArrayType", "maxElement"]
 - !private ["Ps10_ArrayType", "popLast"]
 - !private ["Ps10_ArrayType", "reduce"]
 - !private ["Ps10_ArrayType", "shuffleInPlace"]
@@ -405,6 +422,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "flatMap"]
 - ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps24_DestructorSafeContainer", "map"]
+- !private ["Ps24_DestructorSafeContainer", "maxElement"]
 - !private ["Ps24_DestructorSafeContainer", "popLast"]
 - !private ["Ps24_DestructorSafeContainer", "reduce"]
 - !private ["Ps24_DestructorSafeContainer", "shuffleInPlace"]
@@ -441,6 +459,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "flatMap"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "map"]
+- !private ["Ps21_ObjectiveCBridgeable", "maxElement"]
 - !private ["Ps21_ObjectiveCBridgeable", "popLast"]
 - !private ["Ps21_ObjectiveCBridgeable", "reduce"]
 - !private ["Ps21_ObjectiveCBridgeable", "shuffleInPlace"]
@@ -464,6 +483,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "flatMap"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "map"]
+- !private ["Ps12_Reflectable", "maxElement"]
 - !private ["Ps12_Reflectable", "popLast"]
 - !private ["Ps12_Reflectable", "reduce"]
 - !private ["Ps12_Reflectable", "shuffleInPlace"]
@@ -561,4 +581,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "dd14c6b21579751794d771cc8b9c964a"
+interface-hash: "0ff8dcf3c0f770c060f7be20f9de72d6"

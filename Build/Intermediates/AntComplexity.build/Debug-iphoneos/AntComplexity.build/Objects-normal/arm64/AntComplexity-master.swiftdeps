@@ -1,10 +1,12 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "48aec38f2a79d86c15aeba84f736d386"
-build_time: [515976942, 84508000]
+build_time: [516242317, 8309000]
 inputs:
-  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/UICollectionViewCellSudoku.swift": [515193735, 0]
-  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/Ant.swift": [515135163, 0]
-  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift": [515976940, 0]
+  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/UICollectionViewCellSudoku.swift": [516149407, 0]
+  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/Ant.swift": [516242251, 0]
+  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift": [516242316, 0]
   "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/AppDelegate.swift": [514677091, 0]
   "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/UICollectionViewFlowLayoutSudoku.swift": [515098867, 0]
+  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/AntData.swift": [516234731, 0]
   "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/Extensions/Array+AntComplexity.swift": [515130218, 0]
+  "/Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/UISliderSudoku.swift": [516179904, 0]

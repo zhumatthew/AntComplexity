@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C13AntComplexity11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
-- "window"
-- "applicationWillTerminate"
 - "applicationDidBecomeActive"
-- "applicationWillResignActive"
-- "application"
+- "window"
 - "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
+- "application"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
 depends-top-level:
-- !private "BooleanLiteralType"
+- "UIWindow"
 - "UIApplicationDelegate"
 - "UIResponder"
-- "UIWindow"
-- "AppDelegate"
 - "UIApplication"
 - "NSObject"
+- !private "BooleanLiteralType"
 - "AnyObject"
 - "Bool"
+- "AppDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

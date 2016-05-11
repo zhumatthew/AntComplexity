@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Dispatch;
 @import CoreGraphics;
 #endif
 
@@ -127,6 +128,7 @@ SWIFT_CLASS("_TtC13AntComplexity26UICollectionViewCellSudoku")
 @property (nonatomic, strong) UIView * _Null_unspecified bottomLineView;
 @property (nonatomic, strong) UIView * _Null_unspecified leftLineView;
 @property (nonatomic, strong) UIView * _Null_unspecified rightLineView;
+@property (nonatomic) dispatch_once_t token;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)addLineViews;
@@ -145,28 +147,43 @@ SWIFT_CLASS("_TtC13AntComplexity32UICollectionViewFlowLayoutSudoku")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
-@class UISlider;
+@class UIEvent;
+@class UITouch;
+
+SWIFT_CLASS("_TtC13AntComplexity14UISliderSudoku")
+@interface UISliderSudoku : UISlider
+@property (nonatomic, strong) UIEvent * _Nullable currentEvent;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
+@class UICollectionView;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC13AntComplexity14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
-@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified slider;
+@property (nonatomic, weak) IBOutlet UISliderSudoku * _Null_unspecified slider;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified antCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified selectedCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cycleCountLabel;
-@property (nonatomic, readonly, copy) NSArray<NSArray<NSNumber *> *> * _Nonnull solutionGrid;
+@property (nonatomic, copy) NSArray<NSArray<NSNumber *> *> * _Nonnull solutionGrid;
+@property (nonatomic, copy) NSArray<NSArray<NSArray<NSNumber *> *> *> * _Nonnull allPuzzles;
 @property (nonatomic, copy) NSArray<NSArray<NSNumber *> *> * _Null_unspecified startingCells;
 @property (nonatomic, copy) NSArray<NSArray<NSArray<NSNumber *> *> *> * _Nonnull pheromone;
 @property (nonatomic) NSInteger antCount;
+@property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified puzzleButtons;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified resultsLabel;
+- (IBAction)switchPuzzle:(UIButton * _Nonnull)sender;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (IBAction)sliderValueDidChange:(UISlider * _Nonnull)sender;
+- (IBAction)sliderValueDidChange:(UISliderSudoku * _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)solve:(UIButton * _Nonnull)sender;
+- (void)logData;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

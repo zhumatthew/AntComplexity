@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C13AntComplexity32UICollectionViewFlowLayoutSudoku", ""]
 provides-dynamic-lookup:
-- "collectionViewContentSize"
-- "layoutAttributesForElementsInRect"
 - "layoutAttributesForItemAtIndexPath"
+- "layoutAttributesForElementsInRect"
+- "collectionViewContentSize"
 depends-top-level:
-- !private "/"
-- "NSIndexPath"
-- !private "CGFloat"
-- !private "*"
-- "UICollectionViewLayoutAttributes"
-- !private "CGSizeMake"
-- "UICollectionViewFlowLayoutSudoku"
-- "CGSize"
-- !private "%"
-- "UICollectionViewFlowLayout"
 - "CGRect"
+- !private "*"
 - !private "..."
+- !private "CGFloat"
 - !private "CGRectMake"
+- !private "/"
+- !private "%"
+- !private "CGSizeMake"
+- "UICollectionViewFlowLayout"
+- "CGSize"
+- "UICollectionViewLayoutAttributes"
+- "NSIndexPath"
+- "UICollectionViewFlowLayoutSudoku"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

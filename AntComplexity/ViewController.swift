@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var slider: UISliderSudoku!
     @IBOutlet weak var antCountLabel: UILabel!
     @IBOutlet weak var selectedCountLabel: UILabel!
     @IBOutlet weak var cycleCountLabel: UILabel!
@@ -24,7 +24,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // 3x3 sections should be bold
     
     // Base
-    //    let solutionGrid = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
+    var solutionGrid = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
     
     // Easiest
 //        let solutionGrid = [[0,0,0,2,6,0,7,0,1],[6,8,0,0,7,0,0,9,0],[1,9,0,0,0,4,5,0,0],[8,2,0,1,0,0,0,4,0],[0,0,4,6,0,2,9,0,0],[0,5,0,0,0,3,0,2,8],[0,0,9,3,0,0,0,7,4],[0,4,0,0,5,0,0,3,6],[7,0,3,0,1,8,0,0,0]]
@@ -45,26 +45,55 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 //    let solutionGrid = [[4,0,3,0,0,0,1,0,0],[0,0,0,3,0,0,0,0,5],[0,0,0,0,2,1,7,0,0],[0,3,0,0,0,6,0,0,2],[0,5,0,0,4,0,0,3,0],[1,0,0,5,0,0,0,6,0],[0,0,8,6,9,0,0,0,0],[7,0,0,0,0,3,0,0,0],[0,0,4,0,0,0,2,0,9]]
     
     // The one in the paper (is this impossible?)
-    let solutionGrid = [[0,3,0,0,0,0,0,5,0],[0,0,1,8,0,0,0,0,0],[2,0,0,5,0,0,0,4,1],[3,0,6,4,0,0,0,0,0],[0,0,0,1,7,2,0,0,0],[0,0,0,0,0,8,7,0,4],[7,8,0,0,0,4,0,0,5],[0,0,0,0,0,3,0,0,0],[0,9,0,0,0,0,6,2,0]]
+//    let solutionGrid = [[0,3,0,0,0,0,0,5,0],[0,0,1,8,0,0,0,0,0],[2,0,0,5,0,0,0,4,1],[3,0,6,4,0,0,0,0,0],[0,0,0,1,7,2,0,0,0],[0,0,0,0,0,8,7,0,4],[7,8,0,0,0,4,0,0,5],[0,0,0,0,0,3,0,0,0],[0,9,0,0,0,0,6,2,0]]
     
     // 18 minutes, took us 12
-//    let solutionGrid = [[8,0,0,0,0,0,0,0,0],[0,0,3,6,0,0,0,0,0],[0,7,0,0,9,0,2,0,0],[0,5,0,0,0,7,0,0,0],[0,0,0,0,4,5,7,0,0],[0,0,0,1,0,0,0,3,0],[0,0,1,0,0,0,0,6,8],[0,0,8,5,0,0,0,1,0],[0,9,0,0,0,0,4,0,0]]
+//    var solutionGrid = [[8,0,0,0,0,0,0,0,0],[0,0,3,6,0,0,0,0,0],[0,7,0,0,9,0,2,0,0],[0,5,0,0,0,7,0,0,0],[0,0,0,0,4,5,7,0,0],[0,0,0,1,0,0,0,3,0],[0,0,1,0,0,0,0,6,8],[0,0,8,5,0,0,0,1,0],[0,9,0,0,0,0,4,0,0]]
     
     // 7 seconds
 //    let solutionGrid = [[8,4,2,0,0,0,0,0,0],[0,0,0,5,0,1,7,0,0],[0,0,0,0,0,0,3,8,0],[9,5,0,0,0,0,0,0,2],[0,0,0,0,5,0,0,0,0],[0,0,0,0,0,0,0,4,6],[1,0,0,0,0,7,4,0,0],[0,0,8,0,6,0,0,0,0],[0,0,4,0,0,0,0,3,8]]
     
     // Extreme?
 //    let solutionGrid = [[0,0,5,1,0,0,0,0,6],[0,1,0,0,7,0,0,2,0],[7,0,0,0,0,8,5,0,0],[6,0,0,0,0,4,3,0,0],[0,8,0,0,6,0,0,5,0],[0,0,2,9,0,0,0,0,1],[0,0,1,3,0,0,0,0,9],[0,4,0,0,8,0,0,6,0],[5,0,0,0,0,1,2,0,0]]
+    
+    // 18 min solution
+//    var fullSolutionGrid = [[8,1,2,7,5,3,6,4,9],[9,4,3,6,8,2,1,7,5],[6,7,5,4,9,1,2,8,3],[1,5,4,2,3,7,8,9,6],[3,6,9,8,4,5,7,2,1],[2,8,7,1,6,9,5,3,4],[5,2,1,9,7,4,3,6,8],[4,3,8,5,2,6,9,1,7],[7,9,6,3,1,8,4,5,2]]
+    
+    // not fun solution
+//    var fullSolutionGrid = [[1,2,6,4,3,7,9,5,8],[8,9,5,6,2,1,4,7,3],[3,7,4,9,8,5,1,2,6],[4,5,7,1,9,3,8,6,2],[9,8,3,2,4,6,5,1,7],[6,1,2,5,7,8,3,9,4],[2,6,9,3,1,4,7,8,5],[5,4,8,7,6,9,2,3,1],[7,3,1,8,5,2,6,4,9]]
+    
+//    var allPuzzles = [[[0,0,0,2,6,0,7,0,1],[6,8,0,0,7,0,0,9,0],[1,9,0,0,0,4,5,0,0],[8,2,0,1,0,0,0,4,0],[0,0,4,6,0,2,9,0,0],[0,5,0,0,0,3,0,2,8],[0,0,9,3,0,0,0,7,4],[0,4,0,0,5,0,0,3,6],[7,0,3,0,1,8,0,0,0]]]
+    
+    // AI Escargot
+//    var allPuzzles = [[[1,0,0,0,0,7,0,9,0],[0,3,0,0,2,0,0,0,8],[0,0,9,6,0,0,5,0,0],[0,0,5,3,0,0,9,0,0],[0,1,0,0,8,0,0,0,2],[6,0,0,0,0,4,0,0,0],[3,0,0,0,0,0,0,1,0],[0,4,0,0,0,0,0,0,7],[0,0,7,0,0,0,3,0,0]]]
+    
+//    var allPuzzles = [[[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]]
+    
+    // AI killer
+    var allPuzzles = [[[0,0,0,0,0,0,0,7,0],[0,6,0,0,1,0,0,0,4],[0,0,3,4,0,0,2,0,0],[8,0,0,0,0,3,0,5,0],[0,0,2,9,0,0,7,0,0],[0,4,0,0,8,0,0,0,9],[0,2,0,0,6,0,0,0,7],[0,0,0,1,0,0,9,0,0],[7,0,0,0,0,8,0,6,0]]]
+
 
     var startingCells: [[Bool]]!
     
     // Bold the solution grid/starting grid?
     
+    var antData = [AntData]()
+
+    
     var pheromone = Array(count: 9, repeatedValue: Array(count: 9, repeatedValue: Array(count: 9, repeatedValue: 1000.0)))
 
-    var antCount = 500
+    var antCount = 30
     var ants = [Ant]()
 
+    @IBOutlet var puzzleButtons: [UIButton]!
+    @IBOutlet weak var resultsLabel: UILabel!
+    
+    @IBAction func switchPuzzle(sender: UIButton) {
+        solutionGrid = allPuzzles[sender.tag]
+        startingCells = solutionGrid.map({ $0.map({ $0 > 0 }) })
+        collectionView.reloadData()
+    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 81
     }
@@ -74,7 +103,26 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let row = indexPath.row / 9
         let column = indexPath.row % 9
         
-        cell.indexPath = indexPath
+        if let _ = cell.topLineView {
+            cell.topLineView.hidden = true
+            cell.bottomLineView.hidden = true
+            cell.leftLineView.hidden = true
+            cell.rightLineView.hidden = true
+            
+            if column == 0 {
+                cell.leftLineView.hidden = false
+            } else if (column + 1) % 3 == 0 {
+                cell.rightLineView.hidden = false
+            }
+            
+            if row == 0 {
+                cell.topLineView.hidden = false
+            } else if (row + 1) % 3 == 0 {
+                cell.bottomLineView.hidden = false
+            }
+        }
+        
+//        cell.indexPath = indexPath
         // Can't really show pheromone due to the three dimesional nature involving the digits
         
         // 1.0 is fully opaque, 0.0 is fully transparent
@@ -85,6 +133,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         if startingCells[row][column] {
             cell.contentView.backgroundColor = UIColor.orangeColor()
+        } else {
+            cell.contentView.backgroundColor = UIColor.whiteColor()
         }
         
         // Slider was disabled before the solve button was pressed, which is why the cell label text is set to the solution grid cell
@@ -140,7 +190,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 //        cell.imageView?.layer.masksToBounds = true
 //    }
     
-    @IBAction func sliderValueDidChange(sender: UISlider) {
+    @IBAction func sliderValueDidChange(sender: UISliderSudoku) {
         let i = Int(slider.value)
         antCountLabel.text = "Ant #\(i+1)"
         selectedCountLabel.text = "selected: \(ants[i].selected)"
@@ -150,11 +200,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        allPuzzles.append([[0,2,0,6,0,8,0,0,0],[5,8,0,0,0,9,7,0,0],[0,0,0,0,4,0,0,0,0],[3,7,0,0,0,0,5,0,0],[6,0,0,0,0,0,0,0,4],[0,0,8,0,0,0,0,1,3],[0,0,0,0,2,0,0,0,0],[0,0,9,8,0,0,0,3,6],[0,0,0,3,0,6,0,9,0]])
+        allPuzzles.append([[0,0,0,6,0,0,4,0,0],[7,0,0,0,0,3,6,0,0],[0,0,0,0,9,1,0,8,0],[0,0,0,0,0,0,0,0,0],[0,5,0,1,8,0,0,0,3],[0,0,0,3,0,6,0,4,5],[0,4,0,2,0,0,0,6,0],[9,0,3,0,0,0,0,0,0],[0,2,0,0,0,0,1,0,0]])
+        allPuzzles.append([[2,0,0,3,0,0,0,0,0],[8,0,4,0,6,2,0,0,3],[0,1,3,8,0,0,2,0,0],[0,0,0,0,2,0,3,9,0],[5,0,7,0,0,0,6,2,1],[0,3,2,0,0,6,0,0,0],[0,2,0,0,0,9,1,4,0],[6,0,1,2,5,0,8,0,9],[0,0,0,0,0,1,0,0,2]])
+        allPuzzles.append([[4,0,3,0,0,0,1,0,0],[0,0,0,3,0,0,0,0,5],[0,0,0,0,2,1,7,0,0],[0,3,0,0,0,6,0,0,2],[0,5,0,0,4,0,0,3,0],[1,0,0,5,0,0,0,6,0],[0,0,8,6,9,0,0,0,0],[7,0,0,0,0,3,0,0,0],[0,0,4,0,0,0,2,0,9]])
+        allPuzzles.append([[0,2,0,0,0,0,0,0,0],[0,0,0,6,0,0,0,0,3],[0,7,4,0,8,0,0,0,0],[0,0,0,0,0,3,0,0,2],[0,8,0,0,4,0,0,1,0],[6,0,0,5,0,0,0,0,0],[0,0,0,0,1,0,7,8,0],[5,0,0,0,0,9,0,0,0],[0,0,0,0,0,0,0,4,0]])
+        allPuzzles.append([[8,0,0,0,0,0,0,0,0],[0,0,3,6,0,0,0,0,0],[0,7,0,0,9,0,2,0,0],[0,5,0,0,0,7,0,0,0],[0,0,0,0,4,5,7,0,0],[0,0,0,1,0,0,0,3,0],[0,0,1,0,0,0,0,6,8],[0,0,8,5,0,0,0,1,0],[0,9,0,0,0,0,4,0,0]])
+        allPuzzles.append([[0,3,0,0,0,0,0,5,0],[0,0,1,8,0,0,0,0,0],[2,0,0,5,0,0,0,4,1],[3,0,6,4,0,0,0,0,0],[0,0,0,1,7,2,0,0,0],[0,0,0,0,0,8,7,0,4],[7,8,0,0,0,4,0,0,5],[0,0,0,0,0,3,0,0,0],[0,9,0,0,0,0,6,2,0]])
+        
         
         collectionView.collectionViewLayout = UICollectionViewFlowLayoutSudoku()
         slider.maximumValue = Float(antCount - 1)
         slider.enabled = false
         
+        solutionGrid = allPuzzles.first!
         startingCells = solutionGrid.map({ $0.map({ $0 > 0 }) })
         
 //        self.collectionView.reloadData()
@@ -169,6 +228,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
 
     @IBAction func solve(sender: UIButton) {
+        
+        let startTime = CACurrentMediaTime()
+        
+        for button in puzzleButtons {
+            button.enabled = false
+//            button.disable
+        }
         slider.enabled = true
         sender.enabled = false
         
@@ -230,6 +296,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 Ant.maxSelected = 0
                 for ant in self.ants {
                     ant.exploreGrid(self.pheromone, solutionGrid: self.solutionGrid)
+//                    self.antData.append(AntData(filledCells: ant.selected, correctCells: ant.compareSolutionGrid(self.fullSolutionGrid)))
                 } // end for all ants
                 
                 let deltaPheromone = Double(Ant.maxSelected) / 81.0;
@@ -253,11 +320,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                     if globalMaxSelected == 81 {
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             print("Best ant: \(Ant.bestAnt+1)")
+                            
+                            self.slider.cancelTrackingWithEvent(self.slider.currentEvent)
+                            
                             self.slider.enabled = false
                             self.slider.value = Float(Ant.bestAnt)
                             self.sliderValueDidChange(self.slider)
                             
-                            // UIControlEventTouchCancel
+                            
+                            let elapsedTime = CACurrentMediaTime() - startTime
+                            self.resultsLabel.text = "Solved in: \(String(format: "%5.4f", elapsedTime)) seconds"
+
+//                            self.logData()
                             
                         })
                         return
@@ -269,6 +343,69 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             // end of all cycles
         }
         
+        
+    }
+    
+    func logData() {
+        
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let dataDir = dirPaths.first!.stringByAppendingString("/data/")
+        let filemgr = NSFileManager.defaultManager()
+        if !filemgr.fileExistsAtPath(dataDir) {
+            do {
+                try filemgr.createDirectoryAtPath(dataDir, withIntermediateDirectories: false, attributes: nil)
+            } catch let error {
+                print(error)
+            }
+        }
+        
+        
+        //        let dateFormatter = NSDateFormatter()
+        //        dateFormatter.dateFormat = "yyyyMMddhhmmss"
+        
+        let fileName = "antdata.txt"
+        let dataFilePath = dataDir.stringByAppendingString(fileName)
+        let pathURL = NSURL.init(fileURLWithPath: dataFilePath)
+        
+        let dataWidth = 14
+        
+        // Since different image files have different sizes, it may be useful to also have the image size
+        // Image Size, latency, duration (total duration of request), local processing time for image
+        let headings = ["%FilledCells", "CorrectCells"]
+        var header = ""
+        for heading in headings {
+            let padding = "".stringByPaddingToLength(dataWidth-heading.characters.count, withString: " ", startingAtIndex: 0)
+            header += padding + heading
+        }
+        var text = ""
+        
+        for data in self.antData {
+            text += String(format: "\n%\(dataWidth)d", data.filledCells)
+            text += String(format: "%\(dataWidth)d", data.correctCells)
+        }
+        
+        let combinedtext = header + text
+        print("Datapath: \(pathURL)")
+        
+        do {
+            // writing to disk
+            
+            try combinedtext.writeToURL(pathURL, atomically: true, encoding: NSUTF8StringEncoding)
+            
+            // saving was successful. any code posterior code goes here
+            
+            // reading from disk
+            //            do {
+            //                let mytext = try String(contentsOfURL: pathURL, encoding: NSUTF8StringEncoding)
+            //                print(mytext)   // "some text\n"
+            //            } catch let error as NSError {
+            //                print("error loading from url \(pathURL)")
+            //                print(error.localizedDescription)
+            //            }
+        } catch let error as NSError {
+            print("error writing to url \(pathURL)")
+            print(error.localizedDescription)
+        }
         
     }
 

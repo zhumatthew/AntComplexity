@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,27 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "293"
-            endingLineNumber = "293"
-            landmarkName = "exploreGrid(_:solutionGrid:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484358651.014537"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -186,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -202,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -234,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -266,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -282,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,12 +298,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "sliderValueDidChange(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -346,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -410,27 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "exploreGrid(_:solutionGrid:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
             landmarkName = "solve(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -458,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "exploreGrid(_:solutionGrid:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,13 +442,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "sliderValueDidChange(_:)"
-            landmarkType = "5">
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -490,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
             landmarkName = "solve(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -506,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
             landmarkName = "solve(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -522,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
             <Locations>
@@ -585,11 +553,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -601,11 +569,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/ViewController.swift"
-            timestampString = "484353929.158942"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -617,11 +585,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/UICollectionViewCellSudoku.swift"
-            timestampString = "483485723.397637"
+            timestampString = "484525438.77445"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -633,11 +601,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/UICollectionViewCellSudoku.swift"
-            timestampString = "483485841.891692"
+            timestampString = "484525438.77445"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "init(frame:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -648,13 +616,204 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AntComplexity/UICollectionViewCellSudoku.swift"
-            timestampString = "483571048.710626"
+            filePath = "AntComplexity/Ant.swift"
+            timestampString = "484619930.520804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "prepareForReuse()"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "exploreGrid(_:solutionGrid:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/Ant.swift"
+            timestampString = "484619930.520804"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "exploreGrid(_:solutionGrid:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/Ant.swift"
+            timestampString = "484619930.520804"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "exploreGrid(_:solutionGrid:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/Ant.swift"
+            timestampString = "484619930.520804"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "exploreGrid(_:solutionGrid:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/Ant.swift"
+            timestampString = "484619930.520804"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "exploreGrid(_:solutionGrid:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "switchPuzzle(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntComplexity.ViewController.switchPuzzle (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "AntComplexity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift"
+                  timestampString = "484524210.289774"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntComplexity.ViewController.(switchPuzzle (__ObjC.UIButton) -&gt; ()).(closure #1)"
+                  moduleName = "AntComplexity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift"
+                  timestampString = "484524210.290924"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntComplexity.ViewController.(switchPuzzle (__ObjC.UIButton) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "AntComplexity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift"
+                  timestampString = "484524210.29117"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "switchPuzzle(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -665,11 +824,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntComplexity/UICollectionViewCellSudoku.swift"
-            timestampString = "483571048.710626"
+            timestampString = "484527016.389681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "drawRect(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntComplexity.UICollectionViewCellSudoku.drawRect (__C.CGRect) -&gt; ()"
+                  moduleName = "AntComplexity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/UICollectionViewCellSudoku.swift"
+                  timestampString = "484526963.495574"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntComplexity.UICollectionViewCellSudoku.(drawRect (__C.CGRect) -&gt; ()).(closure #1)"
+                  moduleName = "AntComplexity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/UICollectionViewCellSudoku.swift"
+                  timestampString = "484526963.495989"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntComplexity/UICollectionViewCellSudoku.swift"
+            timestampString = "484527016.389681"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "prepareForReuse()"
             landmarkType = "5">
          </BreakpointContent>
@@ -680,13 +903,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
-            landmarkName = "exploreGrid(_:solutionGrid:)"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
+            landmarkName = "solve(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -696,30 +919,62 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
-            landmarkName = "exploreGrid(_:solutionGrid:)"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "solve(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AntComplexity/Ant.swift"
-            timestampString = "483512876.714598"
+            filePath = "AntComplexity/ViewController.swift"
+            timestampString = "484617058.411611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
-            landmarkName = "exploreGrid(_:solutionGrid:)"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "solve(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntComplexity.ViewController.(solve (__ObjC.UIButton) -&gt; ()).(closure #1)"
+                  moduleName = "AntComplexity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift"
+                  timestampString = "484612739.614757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "325"
+                  endingLineNumber = "325"
+                  offsetFromSymbolStart = "3244">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntComplexity.ViewController.(solve (__ObjC.UIButton) -&gt; ()).(closure #1).(closure #3)"
+                  moduleName = "AntComplexity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhumatthew/Documents/Xcode/AntComplexity/AntComplexity/ViewController.swift"
+                  timestampString = "484612739.61513"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "325"
+                  endingLineNumber = "325"
+                  offsetFromSymbolStart = "1756">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

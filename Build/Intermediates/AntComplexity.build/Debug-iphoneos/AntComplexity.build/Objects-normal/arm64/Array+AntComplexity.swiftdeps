@@ -7,18 +7,18 @@ provides-member:
 - ["Sa", "shuffleInPlace"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Array"
-- !private "-"
-- !private "<"
-- !private "UInt32"
-- !private "IntegerLiteralType"
-- !private "arc4random_uniform"
-- !private "!="
-- !private "FloatLiteralType"
 - !private "swap"
+- !private "IntegerLiteralType"
+- !private "-"
+- !private "FloatLiteralType"
 - !private "..<"
-- !private "Int"
+- !private "UInt32"
+- !private "!="
+- "Array"
 - !private "+"
+- !private "Int"
+- !private "arc4random_uniform"
+- !private "<"
 depends-member:
 - !private ["Sa", "Array"]
 - ["Sa", "Generator"]

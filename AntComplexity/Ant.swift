@@ -79,25 +79,29 @@ class Ant {
         // The next selection of a digit-position pair is possible and can be made
         // It is impossible if a digit cannot be placed in a subgrid
         var canSelect = true
-                
-        select: while (canSelect) {
-            
-            selected = 0
-            
-            for i in 0...8 {
-                for j in 0...8 {
-                    let digit = explorationGrid[i][j] // solutionGrid doesn't change? should it be explorationGrid?
-                    if digit != 0 {
-                        digitRow[i][digit-1] = true
-                        digitColumn[j][digit-1] = true
-                        // 0, 1, 2
-                        // 3, 4, 5
-                        // 6, 7, 8
-                        digitSubgrid[(i/3)*3+j/3][digit-1] = true
-                        selected += 1
-                    }
+        
+        selected = 0
+        var randomSelected = 0
+        
+        for i in 0...8 {
+            for j in 0...8 {
+                let digit = explorationGrid[i][j] // solutionGrid doesn't change? should it be explorationGrid?
+                if digit != 0 {
+                    digitRow[i][digit-1] = true
+                    digitColumn[j][digit-1] = true
+                    // 0, 1, 2
+                    // 3, 4, 5
+                    // 6, 7, 8
+                    digitSubgrid[(i/3)*3+j/3][digit-1] = true
+                    selected += 1
                 }
             }
+        }
+        
+        select: while (canSelect) {
+            
+            
+
             
             
             // for all digits k+1
@@ -140,11 +144,18 @@ class Ant {
                         
                         // (When no digits can be entered into the 9x9 grid, canSelect = false)???
                         
+                        // IMPORTANT CODE !%@$!@!@%!@!@$!!@%!$!@%!@#%%&%^&
                         // If there are no positions into which the digit can be entered into the subgrid and the digit is not already in the subgrid, then this explorationGrid cannot be the solution
-//                        if positions == 0 {
-//                            canSelect = false // to indicate this ^ ??
-                            // Although this explorationGrid cannot be the solution, it may be too early to set canSelect to false as it may still be possible to fill other cells elsewhere in the grid
-//                        }
+                        if positions == 0 {
+                            canSelect = false // to indicate this ^ ??
+//                             Although this explorationGrid cannot be the solution, it may be too early to set canSelect to false as it may still be possible to fill other cells elsewhere in the grid
+                            
+                            if randomSelected == 0 {
+                                print("Invalid input matrix! Overdetermined!")
+                            }
+                            // If there are no positions for the digit, and there has been no guessing,
+                            // then invalid matrix (2)?
+                        }
                         
                         // As the code is, it seems that even once a digit has been entered into a subgrid, i and j will still iterate through the subgrid
                         // does the code have to exit the function if a cell is selected??
@@ -152,7 +163,12 @@ class Ant {
                         if positions == 1 && explorationGrid[i][j] == 0 {
                             
                             explorationGrid[yIndex][xIndex] = k+1 // digit index is one less than the digit
+                            
                             selected += 1
+                            
+                            digitRow[yIndex][k] = true
+                            digitColumn[xIndex][k] = true
+                            digitSubgrid[(yIndex/3)*3+xIndex/3][k] = true
                             
                             // perhaps it should be continue, but canSelect should be set to false when no digits can be entered into the 9x9 grid
                             continue select
@@ -172,6 +188,8 @@ class Ant {
                     var digit = 0
                     if explorationGrid[i][j] == 0 {
                         for k in 0...8 {
+                            
+                            // should compare whether the value for the cell is 0 (empty??)
                             // If the number of possible positions for the digit in the subgrid is greater than 0 and the digit is not in the column or row
                             if subgridPositions[i][j][k] > 0 && !digitRow[i][k] && !digitColumn[j][k] {
                                 count += 1
@@ -187,6 +205,11 @@ class Ant {
                         
                         explorationGrid[i][j] = digit
                         selected += 1
+                        
+                        digitRow[i][digit-1] = true
+                        digitColumn[j][digit-1] = true
+                        digitSubgrid[(i/3)*3+j/3][digit-1] = true
+                        
                         continue select
 //                        break select
                     }
@@ -243,11 +266,16 @@ class Ant {
             // are greater than r on some cycles?
             // If so, make r random between 0 and the highest probability?
             // Random number between 0 and 1
-            let r = Double(arc4random()) / Double(UINT32_MAX)
+            var r = Double(arc4random()) / Double(UINT32_MAX)
+            
+            // Divide by 1 / pmax
+            let pmax = p.flatMap{$0}.flatMap{$0}.maxElement()!
+            r = r / (1.0 / pmax) // r can be at most pmax
             
             var positionDigitPair1D = Array.init(0...9*9*9-1)
-            positionDigitPair1D.shuffleInPlace()
+            positionDigitPair1D.shuffleInPlace() // bp here
             
+            // one element is removed every iteration through the loop
             while positionDigitPair1D.count > 0 {
                 
                 let n = positionDigitPair1D.popLast()!
@@ -263,6 +291,12 @@ class Ant {
                     
                     explorationGrid[i][j] = k+1 // digit index is one less than the digit
                     selected += 1
+                    randomSelected += 1
+                    
+                    digitRow[i][k] = true
+                    digitColumn[j][k] = true // bp here
+                    digitSubgrid[(i/3)*3+j/3][k] = true
+                    
                     continue select
                     // break select
                 }
@@ -298,5 +332,18 @@ class Ant {
             Ant.bestAnt = id
         }
 
+    }
+    
+    // returns count of correctly filled cells
+    func compareSolutionGrid(fullSolutionGrid: [[Int]]) -> Int {
+        var count = 0
+        for i in 0...8 {
+            for j in 0...8 {
+                if explorationGrid[i][j] == fullSolutionGrid[i][j] {
+                    count += 1
+                }
+            }
+        }
+        return count
     }
 }
